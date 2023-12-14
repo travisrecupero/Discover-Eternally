@@ -4,6 +4,9 @@ __pycache__/
 # Ignore virtual environment
 myenv/
 
+# Ignore secrets file (ensure secrets.py is not committed)
+secrets.py
+
 # Ignore any local or environment-specific files
 .env
 
