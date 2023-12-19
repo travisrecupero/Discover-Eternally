@@ -1,6 +1,6 @@
 # Discover-Eternally
 
-Spotify generates a Discover Weekly playlist every week with 30 newly recommened songs for you to listen to. After the week, those songs are gone forever and new songs populate the playlist! This moves your Discover Weekly Spotify playlist into a "Discover Eternally" playlist every week. With this program you will never miss a song.
+Spotify generates a Discover Weekly playlist every week with 30 newly recommened songs for you to listen to. After the week, those songs are gone forever and new songs populate the playlist! This program moves your Discover Weekly Spotify playlist into a "Discover Eternally" playlist every week so you will never miss a song.
 
 ## Installation
 
@@ -35,6 +35,18 @@ Spotify generates a Discover Weekly playlist every week with 30 newly recommened
     ```bash
     pip install -r requirements.txt
     ```
+    
+## Configuration
+
+### Spotify Developer Credentials
+
+Ensure you have obtained your Spotify Developer credentials (Client ID and Client Secret) from the Spotify Developer Dashboard. Add these credentials to the `secrets.py` file as follows:
+
+```python
+CLIENT_ID = 'your_client_id'
+CLIENT_SECRET = 'your_client_secret'
+SPOTIFY_USER_ID = 'your_spotify_user_id'
+```
 
 ## Usage
 
@@ -63,18 +75,6 @@ To automate syncing your playlists, you can schedule the script to run periodica
     ```
 
 This example schedules the script to run every Monday at 8 AM. Adjust the timing as needed.
-
-## Configuration
-
-### Spotify Developer Credentials
-
-Ensure you have obtained your Spotify Developer credentials (Client ID and Client Secret) from the Spotify Developer Dashboard. Add these credentials to the secrets.py file as follows:
-
-```python
-CLIENT_ID = 'your_client_id'
-CLIENT_SECRET = 'your_client_secret'
-SPOTIFY_USER_ID = 'your_spotify_user_id'
-```
 
 ## Contributing
 
